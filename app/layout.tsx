@@ -38,7 +38,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 </div>
                 <nav className="ml-auto text-sm font-medium gap-4 flex items-center">
                   <Link href="/">Home</Link>
-                  <Link href="/about">About</Link>
+                  <Link href="/blog">blog</Link>
                   <ModeToggle />
                 </nav>
               </div>

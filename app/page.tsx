@@ -1,5 +1,6 @@
+import { ListItem } from "@/components/list-item";
 import { List } from "@/components/list-layout";
-import { socialLinks } from "@/utils/data";
+import { socialLinks, work } from "@/utils/data";
 import { LuGithub, LuTwitter, LuLinkedin } from "react-icons/lu";
 
 function About() {
@@ -9,7 +10,7 @@ function About() {
         <h1 className="text-4xl font-bold">
           Vikash{" "}
           <small className="text-xs font-extralight hover:font-medium">
-            <a href={socialLinks.Github}> aka 44chan</a>
+            <a> aka 44chan</a>
           </small>
         </h1>
         <h2 className="font-light text-lg py-4">Engineer @ notundefined</h2>
@@ -25,17 +26,18 @@ function About() {
           </a>
         </div>
       </div>
-      <article className="flex flex-col gap-3 mt-2">
+      <article className="flex flex-col gap-3 mt-2 font-light">
         <h2 className="text-2xl font-medium">About</h2>
         <p className="">{`Hi! I am a developer based in India. In 2020, I decided to start programming, and I tumbled headfirst into the rabbit hole of coding. Since then, I've had the privilege of building software for startups and agencies.`}</p>
         <p className="">{`These days, my focus is all about the frontend development scene, where I'm having a blast experimenting with technologies like Next.js, React, Tailwind CSS, and TypeScript. It wasn't always a walk in the park, but the idea of creating something that could truly make a difference kept me motivated `}</p>
         <p>{`In my free time, I love diving into programming articles, and I also share my learnings on this blog when I'm not busy building cool stuff. It's all about the fun of learning and sharing,`}</p>
       </article>
 
-      <hr className="border-black dark:border-primary" />
-      <List />
-      <List />
-      <List />
+      <List title="work">
+        {work.map((data, index) => {
+          return <ListItem {...data} key={index} />;
+        })}
+      </List>
     </div>
   );
 }

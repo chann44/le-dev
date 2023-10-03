@@ -7,4 +7,23 @@ export const socialLinks = {
 };
 
 export const projects: ListItem[] = [];
-export const work: ListItem[] = [];
+export const work: ListItem[] = [
+  {
+    title: "Webloom",
+    description: "Frontend Engineer (Freelance)",
+    logo: "",
+    right: "June-2023 - Aug-2023",
+  },
+  {
+    title: "Fetch",
+    description: "Frontend Engineer",
+    logo: "",
+    right: "Aug-2022 - Jan-2023",
+  },
+  {
+    title: "Komet",
+    description: "Frontend Engineer Intern",
+    right: "Feb-2022 - June-2022",
+    logo: "",
+  },
+];

@@ -5,22 +5,33 @@ import { LuGithub, LuTwitter, LuLinkedin } from "react-icons/lu";
 function About() {
   return (
     <div className="flex flex-col gap-y-10">
-      <article className="flex flex-col gap-3 mt-5">
-        <p className="">{`Hi! I am a designer and developer residing in Berlin, currently building Next.js and various other projects at Vercel. My interests span a broad spectrum of subjects, encompassing web development, creative coding, game design, and human-computer interaction`}</p>
-        <p className="">{`Since high school, I’ve spent years on algorithm competitions, freelance web design & development, and worked as a software engineer at Microsoft. In 2017, I earned my BSc degree in Computer Science from Fudan University. In 2018, I joined Vercel to help build the next generation of web development tools`}</p>
-        <p className="">{`Since high school, I’ve spent years on algorithm competitions, freelance web design & development, and worked as a software engineer at Microsoft. In 2017, I earned my BSc degree in Computer Science from Fudan University. In 2018, I joined Vercel to help build the next generation of web development tools`}</p>
-      </article>
-      <div className="flex gap-x-2">
-        <a href={socialLinks.Github}>
-          <LuGithub className="h-6 w-6" />
-        </a>
-        <a href={socialLinks.Twitter}>
-          <LuTwitter className="h-6 w-6" />
-        </a>
-        <a href={socialLinks.Linkedin}>
-          <LuLinkedin className="h-6 w-6" />
-        </a>
+      <div className="pt-8">
+        <h1 className="text-4xl font-bold">
+          Vikash{" "}
+          <small className="text-xs font-extralight hover:font-medium">
+            <a href={socialLinks.Github}> aka 44chan</a>
+          </small>
+        </h1>
+        <h2 className="font-light text-lg py-4">Engineer @ notundefined</h2>
+        <div className="flex gap-x-2">
+          <a href={socialLinks.Github}>
+            <LuGithub className="h-6 w-6" />
+          </a>
+          <a href={socialLinks.Twitter}>
+            <LuTwitter className="h-6 w-6" />
+          </a>
+          <a href={socialLinks.Linkedin}>
+            <LuLinkedin className="h-6 w-6" />
+          </a>
+        </div>
       </div>
+      <article className="flex flex-col gap-3 mt-2">
+        <h2 className="text-2xl font-medium">About</h2>
+        <p className="">{`Hi! I am a developer based in India. In 2020, I decided to start programming, and I tumbled headfirst into the rabbit hole of coding. Since then, I've had the privilege of building software for startups and agencies.`}</p>
+        <p className="">{`These days, my focus is all about the frontend development scene, where I'm having a blast experimenting with technologies like Next.js, React, Tailwind CSS, and TypeScript. It wasn't always a walk in the park, but the idea of creating something that could truly make a difference kept me motivated `}</p>
+        <p>{`In my free time, I love diving into programming articles, and I also share my learnings on this blog when I'm not busy building cool stuff. It's all about the fun of learning and sharing,`}</p>
+      </article>
+
       <hr className="border-black dark:border-primary" />
       <List />
       <List />

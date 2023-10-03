@@ -39,7 +39,7 @@ function About() {
         })}
       </List>
       <List title="Project(s)">
-        {projects.map(({ desc, link, name }, index) => {
+        {projects.map(({ desc, link, name, Icon }, index) => {
           return (
             <ListItem
               title={name}
@@ -52,6 +52,7 @@ function About() {
               }
               description={desc}
               key={index}
+              logo={Icon}
             />
           );
         })}

@@ -15,7 +15,7 @@ export default function Home() {
               <h2 className="text-xl">{post.title}</h2>
             </Link>
             {post.description && (
-              <p className="text-primary/70">{post.description}</p>
+              <p className="dark:text-primary/60">{post.description}</p>
             )}
           </article>
         ))}

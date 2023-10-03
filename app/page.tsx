@@ -1,6 +1,6 @@
 import { ListItem } from "@/components/list-item";
 import { List } from "@/components/list-layout";
-import { socialLinks, work } from "@/utils/data";
+import { projects, socialLinks, work } from "@/utils/data";
 import { LuGithub, LuTwitter, LuLinkedin } from "react-icons/lu";
 
 function About() {
@@ -33,9 +33,27 @@ function About() {
         <p>{`In my free time, I love diving into programming articles, and I also share my learnings on this blog when I'm not busy building cool stuff. It's all about the fun of learning and sharing,`}</p>
       </article>
 
-      <List title="work">
+      <List title="Experience">
         {work.map((data, index) => {
           return <ListItem {...data} key={index} />;
+        })}
+      </List>
+      <List title="Project(s)">
+        {projects.map(({ desc, link, name }, index) => {
+          return (
+            <ListItem
+              title={name}
+              right={
+                <>
+                  <a className="" href={link}>
+                    View on Github
+                  </a>
+                </>
+              }
+              description={desc}
+              key={index}
+            />
+          );
         })}
       </List>
     </div>

@@ -13,7 +13,7 @@ export type ListItem = {
 export function ListItem(props: ListItem) {
   const { description, title, logo, right } = props;
   return (
-    <div className="flex justify-between items-center hover:bg-white hover:bg-opacity-10 p-3 rounded-md cursor-pointer hover:border border-primary/30 hover:animate-pulse">
+    <div className="flex justify-between items-center hover:bg-white hover:bg-opacity-10 p-3 rounded-md  hover:border border-primary/30 ">
       {/* left */}
       <div className="flex items-center gap-x-3">
         <Avatar>
@@ -22,7 +22,7 @@ export function ListItem(props: ListItem) {
         </Avatar>
         <div>
           <p className="text-lg">{title}</p>
-          <p className="text-sm dark:text-primary/60">{description}</p>
+          <p className="text-sm dark:text-primary/60 max-w-md">{description}</p>
         </div>
       </div>
       {/* right */}

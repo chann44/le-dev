@@ -13,7 +13,10 @@ function About() {
             <a> aka 44chan</a>
           </small>
         </h1>
-        <h2 className="font-light text-lg py-4">Engineer @ notundefined</h2>
+        <h2 className="font-light text-lg py-4">
+          Engineer @webloom building{" "}
+          <a href="https://www.tinyapi.co/">Tiny API</a>
+        </h2>
         <div className="flex gap-x-2">
           <a href={socialLinks.Github}>
             <LuGithub className="h-6 w-6" />

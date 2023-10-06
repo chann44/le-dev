@@ -13,10 +13,10 @@ export const socialLinks = {
 
 export const work: ListItem[] = [
   {
-    title: "Webloom",
+    title: "Webloominc",
     description: "Frontend Engineer (Freelance)",
     logo: "/work/webloom.jpeg",
-    right: "June-2023 - Aug-2023",
+    right: "June-2023 - present",
   },
   {
     title: "Fetch",

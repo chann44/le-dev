@@ -1,0 +1,39 @@
+---
+title: what is `Omit` utility  Type
+description: Understanding the "Omit" Utility Type in TypeScript
+date: "2024-01-18"
+---
+
+TypeScript offers a variety of utility types to work with. One of these is the `Omit` utility type, which allows us to remove certain properties from types.
+
+
+### How does it work ?
+
+The `Omit` utility type takes a type and properties as arguments, then removes them from the given type. For instance, if you have a type `UserResponse`:
+
+
+```typescript
+type UserResponse = {
+    id: string;
+    name: string;
+    age: number;
+    createdAt: string;
+    updatedAt: string
+}
+
+```
+
+And you want to remove createdAt and updatedAt, you can use the Omit utility type as follows:
+
+```typescript
+type User = Omit<UserResponse, "createdAT" | "updatedAt">
+```
+
+Now, `createdAt` and `updatedAt` are no longer part of the `User` type.
+
+I hope this helps clarify the usage of the `Omit` utility type in TypeScript.
+
+
+
+
+

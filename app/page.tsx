@@ -14,13 +14,13 @@ function About() {
           </small>
         </h1>
         <h2 className="font-light text-lg py-4">
-          Engineer <span className="text-white font-medium">@webloominc</span>{" "}
+          Engineer <span className="dark:text-white font-medium">@Qiro</span>{" "}
           building{" "}
           <a
-            className="text-white font-semibold underline underline-offset-1"
-            href="https://www.tinyapi.co/"
+            className="dark:text-white font-semibold underline underline-offset-1"
+            href="https://www.qiro.fi/"
           >
-            Tiny API
+            Qiro Finance
           </a>
         </h2>
         <div className="flex gap-x-2">

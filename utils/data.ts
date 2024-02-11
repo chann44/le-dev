@@ -1,9 +1,5 @@
 import { ListItem } from "@/components/list-item";
-import { FaPollH } from "react-icons/fa";
-import { GiAndromedaChain } from "react-icons/gi";
-import { TbHandRock } from "react-icons/tb";
-import { DiGit } from "react-icons/di";
-import { GiNewShoot } from "react-icons/gi";
+;
 
 export const socialLinks = {
   Github: "https://github.com/chann44",
@@ -13,10 +9,15 @@ export const socialLinks = {
 
 export const work: ListItem[] = [
   {
+    title: "Qiro",
+    description: "Full Stack Engineer",
+    right: "Feb-2024 - present",
+  },
+  {
     title: "Webloominc",
     description: "Frontend Engineer (Freelance)",
     logo: "/work/webloom.jpeg",
-    right: "June-2023 - present",
+    right: "June-2023 - Dec-2023",
   },
   {
     title: "Fetch",
